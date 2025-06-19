@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afaq | CodeSnip Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="logo">Afaq</div>
+            <nav>
+                <button id="mobile-menu-toggle" class="mobile-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">CodeSnip</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" title="Toggle Theme">🌓</button>
+            </nav>
+        </header>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h1 class="gallery-title scroll-reveal">CodeSnip</h1>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="snip1.jpg" alt="Photo 1" class="lightbox-trigger">
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="snip2.jpg" alt="Photo 2" class="lightbox-trigger">
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="snip3.jpg" alt="Photo 3" class="lightbox-trigger">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <img id="lightbox-img" src="" alt="lightbox view">
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 <span class="glow-name footer-glow">afaq</span>. All rights reserved.</p>
+        <p class="footer-links">
+            <a href="mailto:resur.ryu11@gmail.com">Email</a> |
+            <a href="https://www.instagram.com/iko17._/" target="_blank">Insta</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -371,3 +371,57 @@ main {
     text-align: center;
     margin-top: 3em;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 4em auto;
+    padding: 2em;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.contact-form label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 1.1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8em;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--accent);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-form button {
+    margin-top: 1em;
+    padding: 0.8em;
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--text-color);
+    color: var(--accent);
+}

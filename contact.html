@@ -8,41 +8,54 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Julius+Sans+One&display=swap"
         rel="stylesheet" />
+        
+        
 </head>
 
 <body>
     <div class="page-wrapper">
+        <!-- Navbar -->
         <header class="navbar">
             <div class="logo">Afaq</div>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="gallery.html">CodeSnip</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contact</a>
+                <button id="mobile-menu-toggle" class="mobile-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="gallery.html">CodeSnip</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
                 <button id="theme-toggle" title="Toggle Theme">🌓</button>
             </nav>
         </header>
 
-        <main class="contact-section">
-            <h1 class="section-title glow">Contact Me</h1>
-            <div class="section-content">
-                <p>You can reach me anytime at:</p>
-                <ul>
-                    <li>Email: <a href="mailto:resur.ryu11@gmail.com">resur.ryu11@gmail.com</a></li>
-                    <li>Instagram: <a href="https://www.instagram.com/iko17._/" target="_blank">@iko17._</a></li>
-                </ul>
-            </div>
-        </main>
+        <!-- Contact Form -->
+        <main class="scroll-reveal">
+            <h1 class="gallery-title">Contact Me</h1>
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
 
-        <footer class="site-footer">
-            <p>&copy; 2025 <span class="glow-name">afaq</span>. All rights reserved.</p>
-            <p class="footer-links">
-                <a href="mailto:resur.ryu11@gmail.com">Email</a> |
-                <a href="https://www.instagram.com/iko17._/" target="_blank">Insta</a>
-            </p>
-        </footer>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
     </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 <span class="glow-name footer-glow">afaq</span>. All rights reserved.</p>
+        <p class="footer-links">
+            <a href="mailto:resur.ryu11@gmail.com">Email</a> |
+            <a href="https://www.instagram.com/iko17._/" target="_blank">Insta</a>
+        </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
